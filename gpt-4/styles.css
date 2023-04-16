@@ -1,0 +1,263 @@
+/* body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .container {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 500px;
+  }
+  
+  h1 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    text-align: center;
+  }
+  
+  #newTask {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  #addTaskBtn {
+    margin-top: 1rem;
+    width: 100%;
+    padding: 0.5rem;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  #addTaskBtn:hover {
+    background-color: #0056b3;
+  }
+  
+  #filters {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+  }
+  
+  #filters button {
+    background-color: transparent;
+    border: none;
+    font-size: 1rem;
+    color: #007bff;
+    cursor: pointer;
+  }
+  
+  #filters button:hover {
+    text-decoration: underline;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    display: flex;
+    align-items: center;
+    margin-top: 0.5rem;
+  }
+  
+  input[type="checkbox"] {
+    margin-right: 0.5rem;
+  }
+  
+  button.delete {
+    margin-left: auto;
+    background-color: #dc3545;
+    color: #ffffff;
+    border: none;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.875rem;
+    cursor: pointer;
+  }
+  
+  button.delete:hover {
+    background-color: #c82333;
+  }
+   */
+
+   /* advance css */
+   body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .container {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 500px;
+  }
+  
+  /* h1 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    text-align: center;
+    color: #4a4a4a;
+  } */
+  h1 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    text-align: center;
+    color: #4a4a4a;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  h1 span {
+    display: inline-block;
+    position: relative;
+    animation: falling 1s ease-in-out both;
+  }
+  
+  @keyframes falling {
+    from {
+      transform: translateY(-100%);
+    }
+    to {
+      transform: translateY(0%);
+    }
+  }
+  
+  
+  #newTask {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    transition: border-color 0.2s ease;
+  }
+  
+  #newTask:focus {
+    border-color: #007bff;
+  }
+  
+  #addTaskBtn {
+    margin-top: 1rem;
+    width: 100%;
+    padding: 0.5rem;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  #addTaskBtn:hover {
+    background-color: #0056b3;
+  }
+  
+  #filters {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+  }
+  
+  #filters button {
+    background-color: transparent;
+    border: none;
+    font-size: 1rem;
+    color: #007bff;
+    cursor: pointer;
+    transition: text-decoration 0.2s ease;
+  }
+  
+  #filters button:hover {
+    text-decoration: underline;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    display: flex;
+    align-items: center;
+    margin-top: 0.5rem;
+    background-color: #f5f5f5;
+    padding: 0.5rem;
+    border-radius: 4px;
+  }
+  
+  input[type="checkbox"] {
+    margin-right: 0.5rem;
+  }
+  
+  button.delete {
+    margin-left: auto;
+    background-color: #dc3545;
+    color: #ffffff;
+    border: none;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.875rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  
+  button.delete:hover {
+    background-color: #c82333;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  /* ... existing styles ... */
+
+/* Add a simple fade-in animation to the list items */
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  li {
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  /* Add a simple fade-out animation to the delete button on hover */
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0.5;
+    }
+  }
+  
+  button.delete:hover {
+    animation: fadeOut 0.3s ease-in-out forwards;
+  }
+  
