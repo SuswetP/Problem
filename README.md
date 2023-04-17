@@ -1,6 +1,46 @@
-# To-Do-List-Task
-made a todo list using cgpt
+# problem
 
+Task 1
+Problem: Store Inventory Optimization
+
+Description:
+You are a data analyst at a large retail store chain. Your task is to optimize the store's inventory by analyzing the sales data and determining the optimal stock levels for each product. The goal is to minimize stockouts (running out of inventory) and overstocking (having too much inventory) in order to maximize profits.
+
+Dataset:
+You are provided with a dataset containing sales data for the past 12 months. The dataset has the following columns:
+
+product_id: A unique integer identifier for the product.
+product_name: A string representing the name of the product.
+category: A string representing the category of the product (e.g., electronics, clothing, etc.).
+price: A floating-point number representing the price of the product.
+units_sold: The number of units sold per day for each product.
+date: The date (YYYY-MM-DD) when the sales occurred.
+Requirements:
+
+Load and clean the dataset: Import the dataset and remove any missing or duplicate data. You may use any programming language, library, or tool that you are comfortable with (e.g., Python, R, Excel).
+Conduct exploratory data analysis: Analyze the dataset to understand the trends and patterns in the data. Create visualizations to help communicate your findings (e.g., time series plots, bar charts, pie charts, etc.).
+Calculate the following metrics for each product:
+Average daily sales
+Standard deviation of daily sales
+Sales velocity (the rate at which a product is sold, calculated as the average daily sales divided by the total available stock)
+Based on your analysis, create a recommendation for the optimal stock levels for each product. Consider factors such as the product's sales velocity, the average daily sales, and the standard deviation of daily sales. Your recommendation should include:
+Safety stock: The minimum amount of stock that should be kept on hand to prevent stockouts.
+Reorder point: The stock level at which new inventory should be ordered.
+Order quantity: The number of units to order when the reorder point is reached.
+Provide a report summarizing your findings, methodology, and recommendations. The report should include visualizations and a clear explanation of your analysis.
+Bonus points:
+
+Identify seasonal trends in the data and adjust your recommendations accordingly.
+Implement a machine learning model (e.g., ARIMA, LSTM, Prophet) to forecast future sales and improve your recommendations.
+Optimize your recommendations for different store locations, taking into account factors such as local demand, store size, and shipping costs.
+
+
+
+
+
+
+
+Task 3
 Refactoring Exercise: Improve Code Quality of a To-Do List Application
 
 Your task is to refactor and improve the code quality of a simple To-Do List application. The current implementation works but has several issues that need to be addressed. Your goal is to identify and fix these issues while applying best practices to improve code readability, maintainability, and performance.
